@@ -49,18 +49,23 @@ a {
     margin-top: 10em;
 }
 
-.clear {
+.clear { 
     display: flex;
 }
 
 #clear_all {
-    width: 80%;
     height: 3em;
+    width: 40%;
 }
 
 #del {
-    width: 20%;
     height: 3em;
+    width: 40%;
+}
+
+#equal {
+    height: 3em;
+    width: 20%;
 }
 
 input {
@@ -70,7 +75,6 @@ input {
 }
 
 .num_block_wrapper {
-    background-color: red;
     display: flex;
 }
 
