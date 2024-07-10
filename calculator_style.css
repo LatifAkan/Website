@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,30 +12,39 @@ a {
     color: white;
 }
 
-#top_bar {
-    background-color: navy;
+.bar{
+    cursor: default;
     height: 2.5em;
-    width: auto;
     font-size: large;
     display: flex;
-    order: 2;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
-.bottom_bar {
+#top_bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: navy; 
+    height: 2.5em;
+}
+
+#bottom_bar {
     background-color: navy;
     height: 2.5em;
     width: 100%;
-    font-size: large;
     display: flex;
-    order: 2;
     justify-content: center;
     align-items: center;
     color: white;
     position: absolute;
     bottom: 0;
+}
+
+#bottom_bar:hover {
+    background-color: rgb(0, 0, 180);
 }
 
 #wrapper {

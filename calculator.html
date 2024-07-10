@@ -7,8 +7,8 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div id="top_bar">
-        <a href="index.html">Calculator</a>
+    <div class="bar">
+        <p id="top_bar">Calculator</p>
     </div>
 
     <div id="wrapper">
@@ -16,13 +16,13 @@
         <input type="number" id="">
 
         <div class="clear">
-            <button id="clear_all" class="content_value">CLEAR ALL</button>
+            <button id="clear_all" class="content_value" onclick="button_clicked()">CLEAR ALL</button>
             <button id="del" class="content_value">DEL</button>
             <button id="equal" class="content_value">=</button>
         </div>
 
         <div class="num_block_wrapper"> 
-            <button id="num_block_style" class="content_value">7</button>
+            <button id="num_block_style" class="content_value" onclick="button_clicked()">7</button>
             <button id="num_block_style" class="content_value">8</button>
             <button id="num_block_style" class="content_value">9</button>
             <button id="num_block_style_operator" class="content_value">+</button>
@@ -45,8 +45,8 @@
         </div>    
     </div>
 
-    <div class="bottom_bar">
-        <a href="index.html">Go back</a>
+    <div class="bar">
+        <a href="index.html" id="bottom_bar">Go back</a>
     </div>
 </body>
 </html>
