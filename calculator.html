@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator_style.css">
     <title>Calculator</title>
+    <script src="source.js"></script>
 </head>
 <body>
     <div class="bar">
@@ -13,7 +14,7 @@
 
     <div id="wrapper">
         
-        <input type="number" id="">
+        <input type="number" id="input_field">
 
         <div class="clear">
             <button id="clear_all" class="content_value" onclick="button_clicked()">CLEAR ALL</button>
@@ -22,8 +23,8 @@
         </div>
 
         <div class="num_block_wrapper"> 
-            <button id="num_block_style" class="content_value" onclick="button_clicked()">7</button>
-            <button id="num_block_style" class="content_value">8</button>
+            <button id="num_7" class="content_value" onclick="button_clicked()" value="7">7</button>
+            <button id="num_block_style" class="content_value" onclick="button_clicked()" value="8">8</button>
             <button id="num_block_style" class="content_value">9</button>
             <button id="num_block_style_operator" class="content_value">+</button>
         </div>
