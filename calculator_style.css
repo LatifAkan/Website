@@ -1,6 +1,14 @@
+/*page settings*/
+
 body {
     margin: 0; padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 98.5%;
+    height: 2em;
+    font-size: x-large;
 }
 
 button {
@@ -11,6 +19,8 @@ a {
     text-decoration: none;
     color: white;
 }
+
+/*top_bar & bottom_bar settings*/
 
 .bar{
     cursor: default;
@@ -47,6 +57,8 @@ a {
     background-color: rgb(0, 0, 180);
 }
 
+/*calculcator settings*/
+
 #wrapper {
     display: block;
     flex-direction: column;
@@ -63,27 +75,26 @@ a {
 
 #clear_all {
     height: 3em;
-    width: 40%;
+    flex: 2.16;
 }
 
 #del {
     height: 3em;
-    width: 40%;
+    flex: 1;
 }
 
-#equal {
+#operator_equal {
     height: 3em;
-    width: 20%;
-}
-
-input {
-    width: 98.5%;
-    height: 2em;
-    font-size: x-large;
+    flex: 1;
 }
 
 .num_block_wrapper {
     display: flex;
+}
+
+#operator_plus {
+    width: 20%;
+    height: 5em;
 }
 
 #num_block_style_operator {
@@ -91,12 +102,26 @@ input {
     height: 5em; 
 }
 
-#num_block_style {
-    width: 20%; 
-    flex: 1;
-    height: 5em;
+#num_0 {
+    flex: 3;
 }
 
-#num_block_style_0 {
-    width: 70%;
+#num_1, #num_2, #num_3, #num_4, #num_5, #num_6, #num_7, #num_8, #num_9 {
+    flex: 1; 
+}
+
+#operator_multiplication, #operator_minus, #operator_plus {
+    flex: 1;
+}
+
+#operator_division {
+    flex: 0.9;
+}
+
+.content_value {
+    width: 100%;    
+    display: flex;
+    height: 5em;
+    justify-content: center; 
+    align-items: center;
 }
