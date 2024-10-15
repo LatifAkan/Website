@@ -1,4 +1,5 @@
-# macOS-Dateien .DS_Store
+# macOS-Dateien 
+.DS_Store
 
 # Log-Dateien
 *.log
