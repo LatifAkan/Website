@@ -8,6 +8,9 @@ Projects:
 - Tesla Website
 - Calculator
 - Currency Converter
+- Phone Cost Comparision
+- Printing Cost Comparision
+- Interest Calculator
 
 Also:
 
