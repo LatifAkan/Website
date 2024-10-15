@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(25, 25, 25);
+    margin: 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 90vh;
+}
+
+.container {
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.image {
+    display: block;
+    width: 380px;
+    height: 250px;
+}
+
+img {
+    width: 380px;
+    height: 250px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 250px;
+    font-size: 24px;
+    background-color: rgba(25, 25, 25, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.9;
+}
