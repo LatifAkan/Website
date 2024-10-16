@@ -7,7 +7,7 @@
 .background-image {
     width: 100%;
     height: 100vh;
-    background-image: url("/Projects/TeslaWebsite/TeslaShop/image/space.webp");
+    background-image: url("../image/space.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ h2 {
 }
 
 .navigation {
-    background-image: url(/Projects/TeslaWebsite/TeslaShop/image/stars.gif);
+    background-image: url("../image/stars.gif");
     color: rgb(190, 185, 185);
     border-top-left-radius: 15%;
     border-bottom-left-radius: 15%;
