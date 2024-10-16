@@ -6,12 +6,14 @@
 
 body {
     background-color: #00030c;
+    font-family: "Roboto", sans-serif;
+
 }
 
 .top-container{
     width:100%;
     height: 100vh;
-    background-image: url("../image/Homepage/Tesla-homepage.jpg");
+    background-image: url("./image/Tesla-homepage.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +86,7 @@ body {
 .bottom-container {
     width: 100%;
     height: 100vh;
-    background-image: url("../image/Homepage/content-image.jpg");
+    background-image: url("./image/content-image.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -7,11 +7,12 @@
 .background-image {
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../image/space.webp");
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
 }
 
 #tesla-font {
@@ -23,10 +24,8 @@
 
 .main {
     width: 80%;
-    height: 60%;
-    margin: 11% 10%;      
-    display: grid;  
-    grid-template-columns: 60% 40%;
+    height: 53%;
+    display: flex;
     border: solid 0 black;
     border-radius: 15%;
     box-shadow: 0px 0px 100px rgb(0, 0, 0);
@@ -78,21 +77,24 @@ h2 {
     color: rgb(190, 185, 185);
     border-top-left-radius: 15%;
     border-bottom-left-radius: 15%;
+    width: 60%;
 }
 
 .images {
     border-top-right-radius: 15%;
     border-bottom-right-radius: 15%;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .exterior {
-    width: 100%;
     float: right;
     border-top-right-radius: 50px;
 }
 
 .interior {
-    width: 100%;
     float: right;
     border-bottom-right-radius: 50px;
 }
