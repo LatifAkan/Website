@@ -81,3 +81,10 @@ img {
 .image-container:hover .overlay {
     opacity: 0.9;
 }
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+    }
+
+}
