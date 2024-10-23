@@ -1,0 +1,79 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.story {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 50px 10px black;
+    margin-top: 20%;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.story p {
+    line-height: 1.2;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    margin-left: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    text-shadow: 5px 5px 10px black;
+}
+
+.container img {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    box-shadow: 0 0 50px 10px black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#backgroundImage {  
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#website {
+    width: 10%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    box-shadow: 0 0 50px 10px black;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 5%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#website:hover {
+    width: 20%;
+    transition: 0.5s;
+}
