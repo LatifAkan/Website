@@ -70,9 +70,21 @@ input[type="submit"] {
     border: 2px solid;
     border-color: white;
     color: white;
+    cursor: pointer;
 }
 
 form {
     width: 60%;
     margin: 0 auto;
+}
+
+#website {
+    margin: 2em;
+    width: 7%;
+    height: 3%;
+    background-color: rgb(50,50,80);
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    cursor: pointer;
 }

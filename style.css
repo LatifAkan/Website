@@ -1,90 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --primary-color: rgb(black); 
+}
 
-html, body {
-    font-family: "Roboto", sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(25, 25, 25);
+    background: rgb(231,255,231);
+    background: radial-gradient(circle, rgba(231,255,231,1) 0%, rgba(152,152,152,1) 100%);
     margin: 0;
-    color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
-.navbar {
+.container {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-bar {
     background-color: rgb(30, 30, 30);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 0 20px 10px rgb(30, 30, 30);
+    height: 80px;
     gap: 100px;
+}
+
+.about-me {
+
+    text-align: center;
+    line-height: 0.8;
+    height: 100vh;
+    padding-top: 5em;
+}
+
+#profile-image {
+    width: 980px;
+    height: 670px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.about-me h1 {
+    margin-top: 1em;
+    font-size: 4rem;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-variant: normal;
+    font-style: italic;
+}
+
+.go-projects {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px
+}
+
+.button-style {
+    box-shadow: 0 0 20px 1px rgb(30, 30, 30);
+    border-radius: 50px;
+    width: 50%;
+    bottom: 0;
+}
+
+#arrow-down-container {
+    background-color: #f43a09;
+    opacity: 100;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+
+#arrow-down-container:hover {
+    width: 55%;
+    transition: opacity .5s ease-in-out, width .5s ease-in-out;
+    opacity: 0;
+}
+
+#arrow-text-container {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    font-weight: 500;
+    z-index: -1;
+}
+
+.go-start {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.projects-container:hover {
+
+}
+
+.project {
+    display: flex;
+    height: 500px;
+}
+
+.project img {
+    width: 480px;
+    flex: 1.1;
+}
+
+.project p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    line-height: 1.6;
+    flex: 1;
+}
+
+#project-type-a {
+    background-color: #00246B;
+    color: white;
+}
+
+#project-type-b {
+    background-color: #CADCFC;
+    color: black;
 }
 
 a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    height: 90vh;
 }
 
 .container {
     position: relative;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 20px;
+/* extra small screens */
+@media (min-width: 475px) {  
+	.container {
+		max-width: 475px;
+	}
 }
 
-.image {
-    display: block;
-    width: 380px;
-    height: 250px;
+/* small screens */
+	@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
 }
 
-img {
-    width: 380px;
-    height: 250px;
-    display: block;
+/* medium screens */
+	@media (min-width: 768px) {  
+	.container {
+		max-width: 768px;
+	}
 }
 
-.overlay {
-    position: absolute;
-    opacity: 0;
-    transition: .3s ease-in;
+/* large screens */
+	@media (min-width: 1024px) {  
+	.container {
+		max-width: 1024px;
+	}	
 }
 
-.text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 380px;
-    height: 250px;
-    font-size: 24px;
-    background-color: rgba(25, 25, 25, 1);
-    color: white;
-    cursor: pointer;
+/* extra large screens */
+	@media (min-width: 1280px) {  
+	.container {
+		max-width: 1280px;
+	}
 }
 
-.image-container:hover .overlay {
-    opacity: 0.9;
-}
-
-@media (max-width: 600px) {
-    .projects {
-        flex-direction: column;
-    }
-
+/* 2x extra large screens */
+	@media (min-width: 1536px) {  
+	.container {
+		max-width: 1536px;
+	}
 }
