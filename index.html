@@ -18,14 +18,14 @@
 
 <body>
 
-    <header class="nav-bar container" id="about-me">
-        <a href="#about-me">Über mich</a>
+    <header class="nav-bar container" id="start">
+        <a id="about-me" href="#about-me">Über mich</a>
         <a onclick="scrollProjects()">Projekte</a>
         <a href="">Blog</a>
         <a href="https://github.com/LatifAkan">Socials</a>
     </header>
 
-    <section class="about-me container">
+    <section class="about-me container" id="start">
         <img id="profile-image" src="./image/Profil.jpg" alt="">
         <h1>Hey zusammen, ich bin der Latif</h1>
         <h1>FRONTEND-Entwickler</h1>
@@ -34,80 +34,153 @@
             Lerne und entwickle mich Tag für Tag weiter um meinem Ziel als Softwareentwickler 1 Schritt näher zu kommen.
         </blockquote>
         <div class="go-projects">
-            <div class="button-style" id="arrow-down-container" onclick="scrollProjects()">
-               <img src="./image/arrow-down.png" alt="">
+            <div class="button-style" id="arrow-img-container">
+               <img id="arrow-down" src="./image/arrow-down.png" alt="">
             </div>
-            <div class="button-style" id="arrow-text-container">
+            <div class="button-style" id="arrow-text-container" onclick="scrollProjects()">
                 <p>Zu den Projekten</p>
             </div>
         </div>
     </section>
 
+    <!-- PROJECTS -->
+
     <section id="project" class="projects-container container">
         
-        <div class="project" id="project-type-a">
-            <img src="./image/teslaWebsite.png" alt="">
-            <p>
-                Ich bin ein großer Fan von Tesla Fahrzeugen und wollte eine einfache Website entwicklen, wo ich alle Modelle der Tesla Reihe vorstelle. <br>
-                Die Seite beinhaltet alle Tesla Fahrzeuge, eine kurze Geschichte zu Tesla und dem Gründer Elon Musk als auch einen Kleider-Shop.
-            </p>
+        <div class="project">
+            <div class="project-img-container">
+                <a href="./Projects/TeslaWebsite/TeslaHomepage/homepage.html">
+                    <img id="project-img" src="./image/teslaWebsite.png" alt="">
+                </a>
+            </div>
+            <div class="project-contant">
+                <p id="project-text">
+                    Ich bin ein großer Fan von Tesla Fahrzeugen und wollte eine einfache Website entwicklen, wo ich alle Modelle der Tesla Reihe vorstelle. <br>
+                    Die Seite beinhaltet alle Tesla Fahrzeuge, eine kurze Geschichte zu Tesla und dem Gründer Elon Musk als auch einen Kleider-Shop.
+                </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/TeslaWebsite/TeslaHomepage/homepage.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
         </div>
 
-        <div class="project" id="project-type-b">
-            <p>
-                Mich hat schon immer interessiert wie große Unternehmen aber auch kleinere Unternehmen gestartet sind. Wie sind diese Unternehmen so erfolgreich gewordern,
-                mit wie vielen Mitarbeitern haben diese Unterhmen gestartet. Welches Problem soll mit dem Unterhmen gelöst werden und wer ist die Zielgruppe? <br>
-                Das sind Fragen die ich mir bei Unternehmen wie Tesla, Apple, Volkswagen aber auch viele weitere Unternehmen gestellt habe.
-            </p>
-            <img src="./image/business-form.png" alt="">
+        <div class="project">
+            <div class="project-contant">
+                <p id="project-text">
+                    Mich hat schon immer interessiert wie große Unternehmen aber auch kleinere Unternehmen gestartet sind. Wie sind diese Unternehmen so erfolgreich gewordern,
+                    mit wie vielen Mitarbeitern haben diese Unterhmen gestartet. Welches Problem soll mit dem Unterhmen gelöst werden und wer ist die Zielgruppe? <br>
+                    Das sind Fragen die ich mir bei Unternehmen wie Tesla, Apple, Volkswagen aber auch viele weitere Unternehmen gestellt habe.
+                </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/Business-Form/index.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
+            <div class="project-img-container">
+                <a href="./Projects/Business-Form/index.html">
+                    <img id="project-img" src="./image/business-form.png" alt="">
+                </a>
+            </div>
         </div>
         
-        <div class="project" id="project-type-a">
-            <img src="./image/calculator.png" alt="">
-            <p>
-                Ein einfacher Taschenrechner, mit dem es möglich ist die grundlegenden Rechenoperationen durchzuführen. <br>
-                Der Input als auch der Output wird dem Nutzer oben in der leeren Fläche angezeigt. Gleichzeitig ist es auch möglich Fehler rückgängig zu machen.
-            </p>
+        <div class="project">
+            <div class="project-img-container">
+                <a href="./Projects/Calculator/index.html">
+                    <img id="project-img" src="./image/calculator.png" alt="">
+                </a>
+            </div>
+            <div class="project-contant">
+                <p id="project-text">
+                    Ein einfacher Taschenrechner, mit dem es möglich ist die grundlegenden Rechenoperationen durchzuführen. <br>
+                    Der Input als auch der Output wird dem Nutzer oben in der leeren Fläche angezeigt. Gleichzeitig ist es auch möglich Fehler rückgängig zu machen.
+                </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/Calculator/index.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
         </div>
 
-        <div class="project" id="project-type-b">
-            <p>
-                Wie der Name auch schon sagt, kann man mit diesem Rechner von Euro zu Dollar und auch von Dollar zu Euro umrechnen. Dafür einfach einen Betrag in Euro oder USD eingeben und auf den jeweiligen Button klicken.
-            </p>
-            <img src="./image/Waerungsumrechner.png" alt="">
+        <div class="project">
+            <div class="project-contant">
+                <p id="project-text">
+                    Wie der Name auch schon sagt, kann man mit diesem Rechner von Euro zu Dollar und auch von Dollar zu Euro umrechnen. Dafür einfach einen Betrag in Euro oder USD eingeben und auf den jeweiligen Button klicken.
+                </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/CurrencyConverter/index.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
+            <div class="project-img-container">
+                <a href="./Projects/CurrencyConverter/index.html">
+                    <img id="project-img" src="./image/Waerungsumrechner.png" alt="">
+                </a>
+            </div>
         </div>
 
-        <div class="project" id="project-type-a">
-            <img src="./image/ZinseszinsRechner.png" alt="">
-            <p>
-                Der Zinseszins Rechner ermöglicht es die Zinsen mithilfe von einem Zinssatz als auch einer Laufzeit zu berechnen. Das Ergebnis wird dann in Form einer Tabelle visualisiert und zeigt die Zinsen die im Laufe der Zeit entstehen.
-            </p>
+        <div class="project">
+            <div class="project-img-container">
+                <a href="./Projects/InterestCalculator/Zinseszins.html">
+                    <img id="project-img" src="./image/ZinseszinsRechner.png" alt="">
+                </a>
+            </div>
+            <div class="project-contant">
+                <p id="project-text">
+                    Der Zinseszins Rechner ermöglicht es die Zinsen mithilfe von einem Zinssatz als auch einer Laufzeit zu berechnen. Das Ergebnis wird dann in Form einer Tabelle visualisiert und zeigt die Zinsen die im Laufe der Zeit entstehen.
+                </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/InterestCalculator/Zinseszins.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
         </div>
 
-        <div class="project" id="project-type-b">
-            <p>
-                Die große Qual der Wahl. Es fällt dir schwer dich zwischen 2 Telefonanbieter zu entscheiden. Ich habe die Lösung. Gebe einfach die jeweiligen Kosten für die Grundgebühr als auch die Kosten pro Telefonat an, die je Minute abgebucht werden.
-            </p>
-            <img src="./image/TelefonkostenVergleich.png" alt="">
+        <div class="project">
+            <div class="project-contant">
+                <p id="project-text">
+                    Die große Qual der Wahl. Es fällt dir schwer dich zwischen 2 Telefonanbieter zu entscheiden. Ich habe die Lösung. Gebe einfach die jeweiligen Kosten für die Grundgebühr als auch die Kosten pro Telefonat an, die je Minute abgebucht werden.
+                </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/PhoneCostComparision/index.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
+            <div class="project-img-container">
+                <a href="./Projects/PhoneCostComparision/index.html">
+                    <img id="project-img" src="./image/TelefonkostenVergleich.png" alt="">
+                </a>
+            </div>
         </div>
 
-        <div class="project" id="project-type-a">
-            <img src="./image/HotelReservation.png" alt="">
-            <p>
-                Mit dem Hotel Reservierungssystem kannst du je nach Anzahl der Personen und Zimmerkategorie ein Hotelzimmer buchen. Egal ob alleine oder mit mehreren Personen. <br>
-                Zum Schluss noch das Datum für die Reservierung eingeben und dein Zimmer ist gebucht.
-            </p>
+        <div class="project">
+            <div class="project-img-container">
+                <a href="./Projects/HotelReservation/HotelReservation.html">
+                    <img id="project-img" src="./image/HotelReservation.png" alt="">
+                </a>
+            </div>
+            <div class="project-contant">
+                <p id="project-text">
+                    Mit dem Hotel Reservierungssystem kannst du je nach Anzahl der Personen und Zimmerkategorie ein Hotelzimmer buchen. Egal ob alleine oder mit mehreren Personen. <br>
+                    Zum Schluss noch das Datum für die Reservierung eingeben und dein Zimmer ist gebucht.
+                            </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/HotelReservation/HotelReservation.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
         </div>
 
-        <div class="project" id="project-type-b">
-            <p>
-                Dieses Projekt ist entstanden, da ich einen Drucker brauchte. "Günstig ist immer gut" habe ich mir gedacht und habe einen günstigen Drucker gekauft. <br>
-                Ich habe jedoch nicht vorher nach den Patronen Kosten nachgeschaut und musste feststellen, dass die Kosten für die Patronen teurer waren als der Drucker selbst. <br>
-                Mit diesem kleinen Projekt konnte ich tatsächlich Geld sparen, indem ich mir einen etwas teureren Drucker gekauft habe, wo die Patronen deutlich günstiger waren als der erste Drucker. <br>
-            </p>
-            <img src="./image/PrintingCostComparision.png" alt="">
+        <div class="project">
+            <div class="project-contant">
+                <p id="project-text">
+                    Dieses Projekt ist entstanden, da ich einen Drucker brauchte. "Günstig ist immer gut" habe ich mir gedacht und habe einen günstigen Drucker gekauft. <br>
+                    Ich habe jedoch nicht vorher nach den Patronen Kosten nachgeschaut und musste feststellen, dass die Kosten für die Patronen teurer waren als der Drucker selbst. <br>
+                    Mit diesem kleinen Projekt konnte ich tatsächlich Geld sparen, indem ich mir einen etwas teureren Drucker gekauft habe, wo die Patronen deutlich günstiger waren als der erste Drucker. <br>
+                    </p>
+                <div class="project-arrow-link">
+                    <a href="./Projects/PrintingCostComparision/index.html"><img src="./image/arrow-right.png" alt=""></a>
+                </div>
+            </div>
+            <div class="project-img-container">
+                <a href="./Projects/PrintingCostComparision/index.html">
+                    <img id="project-img" src="./image/PrintingCostComparision.png" alt="">
+                </a>
+            </div>
         </div>
-
 
     </section>
     
@@ -115,18 +188,19 @@
     
     <section class="socials"></section>
 
-    <footer>
+    <footer class="container">
 
         <div class="go-start">
-            <div class="button-style" id="arrow-down-container" onclick="scrollProjects()">
-               <img src="./image/arrow-up.png" alt="">
+            <div class="button-style" id="arrow-img-container" onclick="scrollStart()">
+               <img id="arrow-up" src="./image/arrow-up.png" alt="">
             </div>
             <div class="button-style" id="arrow-text-container">
-                <p>Zu den Projekten</p>
+                <p>Zurück zum Anfang</p>
             </div>
         </div>
+
     </footer>
-    
+
 </body>
 
 </html>
