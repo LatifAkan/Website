@@ -1,5 +1,10 @@
 :root {
-    --primary-color: rgb(black); 
+    --background: #121212;
+    --text: #FFFFFF;
+    --nav-bar: rgb(30, 30, 30);
+    --button-primary: #1E90FF; /* Blau für Hauptaktionen */
+    --button-hover: #1C7CC7; /* Dunkleres Blau für Hover */
+    --button-secondary: #E0E0E0; /* Hellgrau für sekundäre Buttons */
 }
 
 html {
@@ -7,10 +12,11 @@ html {
 }
 
 body {
-    background: rgb(231,255,231);
-    background: radial-gradient(circle, rgba(231,255,231,1) 0%, rgba(152,152,152,1) 100%);
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
     margin: 0;
-    color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
@@ -24,15 +30,27 @@ body {
 }
 
 .nav-bar {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--nav-bar);
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    box-shadow: 0 0 20px 10px rgb(30, 30, 30);
+    box-shadow: 0 0 20px 10px var(--button-primary);
     height: 80px;
     gap: 100px;
+}
+
+.nav-bar-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7em;
+}
+
+.nav-bar-text:hover {
+    background-color: var(--button-primary);
 }
 
 .about-me {
@@ -47,6 +65,7 @@ body {
     height: 670px;
     border-radius: 50px;
     margin: 0 auto;
+    box-shadow: 0 0 50px 1px black;
 }
 
 .about-me h1 {
@@ -70,13 +89,13 @@ blockquote {
 }
 
 .button-style {
-    box-shadow: 0 0 20px 1px rgb(30, 30, 30);
+    box-shadow: 0 0 20px 1px var(--button-hover);
     border-radius: 50px;
     width: 100%;
 }
 
 #arrow-text-container {
-    background-color: #f43a09;
+    background: var(--button-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +112,7 @@ blockquote {
 }
 
 #arrow-img-container {
+    background: var(--button-hover);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -106,25 +126,9 @@ blockquote {
     width: 5em;
 }
 
-.go-start {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7em;
-    margin-bottom: 7em;
-}
-
 #arrow-up {
     margin: 0 auto;
     display: flex;
-}
-
-.go-start {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .projects-container {
@@ -134,10 +138,38 @@ blockquote {
     gap: 50px;
 }
 
+.go-start {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+#arrow-img-cont {
+    background: var(--button-hover);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    background-color: red;
+}
+
 .project {
     display: flex;
     width: 100%;
     height: 500px;
+    transition: all .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.project:hover {
+    box-shadow: 0 0 20px 10px var(--button-hover);
+    height: 550px;
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .project-img-container {
@@ -170,7 +202,7 @@ blockquote {
 
 .project-contant {
     flex: 1;
-    background-color: #00246B;
+    background-color: var(--nav-bar);
     color: white;
     position: relative;
 }
@@ -218,10 +250,6 @@ a {
     text-decoration: none;
     font-size: 24px;
     cursor: pointer;
-}
-
-.container {
-    position: relative;
 }
 
 /* extra small screens */

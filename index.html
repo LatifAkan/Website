@@ -19,10 +19,18 @@
 <body>
 
     <header class="nav-bar container" id="start">
-        <a id="about-me" href="#about-me">Über mich</a>
-        <a onclick="scrollProjects()">Projekte</a>
-        <a href="">Blog</a>
-        <a href="https://github.com/LatifAkan">Socials</a>
+        <div class="nav-bar-text">
+            <a id="about-me" href="#about-me">Über mich</a>
+        </div>
+        <div class="nav-bar-text">
+            <a onclick="scrollProjects()">Projekte</a>
+        </div>
+        <div class="nav-bar-text">
+            <a href="">Blog</a>
+        </div>
+        <div class="nav-bar-text">
+            <a href="https://github.com/LatifAkan">Socials</a>
+        </div>
     </header>
 
     <section class="about-me container" id="start">
@@ -191,10 +199,10 @@
     <footer class="container">
 
         <div class="go-start">
-            <div class="button-style" id="arrow-img-container" onclick="scrollStart()">
+            <div class="button-style" id="arrow-img-container">
                <img id="arrow-up" src="./image/arrow-up.png" alt="">
             </div>
-            <div class="button-style" id="arrow-text-container">
+            <div class="button-style" id="arrow-text-container" onclick="scrollStart()">
                 <p>Zurück zum Anfang</p>
             </div>
         </div>
